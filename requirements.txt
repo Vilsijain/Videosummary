@@ -20,7 +20,6 @@ requests==2.26.0
 sacremoses==0.0.46
 six==1.16.0
 tokenizers==0.10.3
-torch==1.10.0
 tqdm==4.62.3
 transformers==4.12.3
 typing-extensions==4.0.0
