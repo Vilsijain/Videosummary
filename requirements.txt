@@ -15,7 +15,6 @@ pipenv==2021.11.15
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==2.4.7
-python2==1.2
 PyYAML==6.0
 regex==2021.10.8
 requests==2.26.0
@@ -34,10 +33,6 @@ tokenizers==0.10.3
 tqdm==4.62.3
 transformers==4.11.3
 typing-extensions==3.7.4.3
-urllib3==1.26.7
-virtualenv==20.4.3
-virtualenv-clone==0.5.7
 Werkzeug==2.0.1
 wrapt==1.12.1
 youtube-transcript-api==0.4.2
-
