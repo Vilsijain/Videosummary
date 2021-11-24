@@ -29,16 +29,18 @@ def getTranscript(video_id):
 
     #  summarized_text = summarized_text[0]
         print(summarized_text)
-    except:
-        print("Please provide a valid video id")
+    except Exception as e:
+        print("Please provide a valid video id",e)
 
     return summarized_text
 @app.route('/')
 def index():
+    print("Hello")
     return "Hello"
-@app.route('/summary', methods=['GET', 'POST'])
+@app.route('/summary', methods=['GET', 'POST','OPTIONS'])
 def summary():
     data = request.json
+    print(data)
     url = data["url"]
     video_id = url.split("=")[1]
     summarized_text = getTranscript(video_id)
@@ -47,4 +49,4 @@ def summary():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
